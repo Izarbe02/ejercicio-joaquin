@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    justify-content: center;
+}
+
+/* Estilos para móvil (por defecto) */
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.header__nav {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    
+}
+.header__nav--logo {
+    border-radius: 53%;
+    height: 65px;
+
+}
+.header__nav-list {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header__nav-item {
+    margin: 10px; 
+   
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.article {
+    padding: 20px;
+    width: 90%; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.article__section2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.article__section--mainTitle {
+    font-size: xxx-large;
+    margin-bottom: 25px;
+}
+
+.article__section--title {
+    font-size: x-large;
+    margin-top: 20px;
+}
+.article__section1{
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: flex-start; 
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+
+.article__section--p {
+    font-size: large;
+    margin: 10px 0;
+    width: 100%; 
+}
+
+.article__section--image {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+}
+
+.footer__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__item {
+    margin: 10px 0; 
+
+   
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Media Queries para pantallas mayores a 992px */
+@media (min-width: 992px) {
+    .header__nav-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__nav-item {
+        margin: 15px; 
+        margin-left: 20%;
+    }
+
+    .article {
+        width: 75%; 
+        display: flex;
+        flex-direction: column;
+        margin-left: 12%;
+    }
+
+    .article__section2,.article__section1 {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    .article__section--text {
+        width: 65%; 
+        margin-right: 20px; 
+    }
+
+    .article__section--image {
+        width: 30%;
+        margin: 15px; 
+    }
+
+    .footer__list {
+        flex-direction: row; 
+        justify-content: space-around; 
+    }
+
+    .footer__item {
+        margin: 0 10px; 
+    }
+}
